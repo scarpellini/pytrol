@@ -18,7 +18,6 @@ class index:
 
 class get_avail_hosts:
 	def GET(self):
-		#return "\n".join(pytrol.get_hosts())
 		render = web.template.render("templates/")
 
 		hosts = sorted(pytrol.get_hosts())

@@ -19,10 +19,3 @@ def get_hosts():
 
 	cm = certmaster.certmaster.CertMaster()
 	return cm.get_signed_certs("*")
-
-#if __name__ == "__main__":
-#	for i in get_hosts():
-#		print "nome %s" % i
-#	cmd = cmd_exec("p-dc-pm-app-a0*", "uname -a")
-#	for i in cmd.keys():
-#		print cmd[i][1]
