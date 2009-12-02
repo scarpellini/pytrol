@@ -1,0 +1,37 @@
+$def with (exec_returns)
+
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+		<link rel=stylesheet href="/static/pytrol.css" TYPE="text/css">
+	</head>
+
+	<body>
+		$for host in exec_returns:
+			<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0" class="return">
+				<tr>
+					<td width="70%" nowrap="yes"><strong>Hostname:</strong> $host </td>
+					<td width="30%" nowrap="yes"><strong>Status:</strong> $exec_returns[host][0] </td>
+				</tr>
+				<tr>
+					<td width="100%" nowrap="yes" colspan=2><strong>stdout:</strong>
+				</tr>
+				<tr>
+					<td width="100%" nowrap="yes" colspan=2>
+						<pre class="return">$exec_returns[host][1]</pre>
+					</td>
+				</tr>
+				<tr>
+					<td width="100%" nowrap="yes" colspan=2>
+						<strong>stderr:</strong>
+					</td>
+				</tr>
+				<tr>
+					<td width="100%" valign="top" nowrap="yes" colspan=2>
+						<pre class="return">$exec_returns[host][2]</pre>
+					</td>
+				</tr>
+			</table>
+			<br><br>
+	</body>
+</html>

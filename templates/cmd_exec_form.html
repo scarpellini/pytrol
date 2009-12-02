@@ -1,0 +1,21 @@
+$def with (hosts)
+
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+		<link rel=stylesheet href="/static/pytrol.css" TYPE="text/css">
+	</head>
+
+	<body>
+		<form name="cmd_exec" method="POST" action="cmd_exec" target="cmd_return">
+			<strong>Command/Syntax:</strong><br> <textarea name="cmd" rows="3" cols="33"></textarea><br><br>
+
+			<strong>Hosts/Targets:</strong><br>
+			$for host in hosts:
+				<input name="hostname" type="checkbox" value="$host"> $host <br>
+
+			<br><br>
+			<center><input value="Run" type="submit"></center>
+		</form>
+	</body>
+</html>
