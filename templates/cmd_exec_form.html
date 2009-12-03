@@ -8,11 +8,13 @@ $def with (hosts)
 
 	<body>
 		<form name="cmd_exec" method="POST" action="cmd_exec" target="cmd_return">
-			<strong>Command/Syntax:</strong><br> <textarea name="cmd" rows="3" cols="33"></textarea><br><br>
+			<strong>Command/Syntax:</strong><br> <textarea name="cmd" rows="3" cols="35"></textarea><br><br>
 
 			<strong>Hosts/Targets:</strong><br>
-			$for host in hosts:
-				<input name="hostname" type="checkbox" value="$host"> $host <br>
+			<div class="checkbox">
+				$for host in hosts:
+					<input name="hostname" type="checkbox" value="$host"> $host <br>
+			</div>
 
 			<br><br>
 			<center><input value="Run" type="submit"></center>
