@@ -52,6 +52,9 @@ class cmd_exec:
 
 		return render.cmd_exec_return(input.cmd, exec_returns)
 
+# Uncomment the line bellow if you intend to use apache + mod_fastcgi.
+# Also, see an example of configuration in examples/apache.conf
+#web.wsgi.runwsgi = lambda func, addr=None: web.wsgi.runfcgi(func, addr)
 
 if __name__ == "__main__":
 	app.run()
