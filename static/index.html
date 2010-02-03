@@ -1,21 +1,15 @@
-<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+"http://www.w3.org/TR/html4/frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
 		<title>PyTrol</title>
 	</head>
-
-	<table width="100%" height="100%" align="center" valign="top" border="0" cellspacing="0" cellpadding="0">
-		<tr>
-			<td width="20%" height="100%" align="center" valign="top" nowrap="yes">
-				<iframe name="cmd_menu" src="/html/cmd_exec_form" frameBorder="0" width="100%" height="100%" scrolling="no" hspace="0" vspace="0">
-					<strong>Your browser doesn't support frames!</strong>
-				</iframe>
-			</td>
-			<td width="80%" height="100%" align="center" valign="top" nowrap="yes">
-				<iframe name="cmd_return" src="about:blank" frameBorder="0" width="100%" height="100%" scrolling="auto" hspace="0" vspace="0">
-					<strong>Your browser doesn't support frames!</strong>
-				</iframe>
-			</td>
-		</tr>
-	</table>
+	<frameset cols="25%,75%">
+		<frame name="cmd_menu" src="/html/cmd_exec_form" frameborder="0" />
+		<frame name="cmd_return" src="about:blank" frameborder="0" />
+		<noframes>
+    		<strong>Your browser doesn't support frames!</strong>
+		</noframes>
+	</frameset>
 </html>

@@ -1,5 +1,5 @@
-The Pytrol is a very simple web interface for interation with FUNC (Fedora Unified Network Controller).
-It's a zero-conf (could change in the future) and database-free system, built using only FUNC/certmaster API.
+Pytrol is a very simple web interface for FUNC (Fedora Unified Network Controller).
+It's a zero-conf (could be changed in the future) and database-free system, built using only FUNC/certmaster API.
 
 Dependencies:
 - Python: http://www.python.org/
@@ -16,3 +16,6 @@ Examples:
 
 Developers:
 - Eduardo S. Scarpellini <scarpellini@gmail.com>
+
+Thanks to:
+- Danilo E. F. Bento, <http://github.com/ehrhardt/pytrol>, for HTML improvements and javascript regex for target hosts.

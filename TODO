@@ -2,7 +2,6 @@ TODO LIST:
 ==========
 
 - Add authorization check.
-- Group servers or provide a text-field where the user can put a regexp to match server names.
+- Group servers.
 - Sign client certificate.
-- Check html/css against W3C (need a webmaster).
 - Improve interface.
